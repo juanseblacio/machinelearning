@@ -1,4 +1,4 @@
-# 🧠 Proyecto de Machine Learning: [Nombre del Proyecto]
+# 🧠 Proyecto de Machine Learning: Casos Churn en Telecomunicaciones
 
 ## 🎯 Introducción
 
