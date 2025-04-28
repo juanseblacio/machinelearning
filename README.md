@@ -18,6 +18,32 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ### Análisis Exploratorio
 - Número de filas y columnas: La data cuenta con 7043 observaciones y un total de 50 columnas.
+- Variables a eliminar:
+  | Column                    | Descripción                                                                                   | Motivo de eliminación                                                                            |
+|---------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| CustomerID                | Un ID único que identifica a cada cliente.                                                     | Variable ID alfanumérica que no aporta al análisis                                               |
+| Senior Citizen            | Indica si el cliente tiene 65 años o más: Sí, No                                               | Variable Age ya contiene esta información                                                        |
+| Dependents                | Indica si el cliente vive con dependientes: Sí, No. Los dependientes pueden ser hijos, padres, abuelos, etc. | Variable Number of Dependents ya contiene esta info                                              |
+| Country                   | El país de residencia principal del cliente.                                                  | Sólo contiene un valor                                                                          |
+| State                     | El estado de la residencia principal del cliente.                                             | Muchas categorías para el desarrollo de un modelo                                               |
+| City                      | La ciudad de la residencia principal del cliente.                                             | Muchas categorías para el desarrollo de un modelo                                               |
+| Zip Code                  | El código postal de la residencia principal del cliente.                                      | ID asociado a ubicación que no aporta al análisis                                                |
+| Latitude                  | La latitud de la residencia principal del cliente.                                            | Ubicación específica que no aporta al análisis junto a Longitud                                  |
+| Longitude                 | La longitud de la residencia principal del cliente.                                           | Ubicación específica que no aporta al análisis junto a Latitud                                   |
+| Population                | Una estimación actual de la población para toda el área del código postal.                    | Variable que no aporta al análisis                                                              |
+| Quarter                   | El trimestre fiscal del que se derivan los datos (por ejemplo, Q3).                           | Columna de un solo valor que no aporta al análisis                                               |
+| Referred a Friend         | Indica si el cliente ha referido alguna vez a un amigo o familiar a esta empresa: Sí, No       | Información contenida en columna Number of Referrals                                            |
+| Avg Monthly Long Distance Charges | Indica los cargos promedio del cliente por llamadas de larga distancia, calculado hasta el final del trimestre especificado. | Descartada para el modelo                                                                        |
+| Internet Service          | Indica si el cliente tiene Internet: Sí, No                                                  | Información contenida en variable Internet Type                                                 |
+| Paperless Billing         | Indica si el cliente ha optado por facturación sin papel: Sí, No                               | Descartada para el modelo                                                                        |
+| Satisfaction Score        | Calificación general de satisfacción del cliente con la empresa de 1 (Muy Insatisfecho) a 5 (Muy Satisfecho). | Descartada porque puede dar pistas al modelo                                                      |
+| Churn Label               | Sí = el cliente dejó la empresa este trimestre. No = el cliente permaneció con la empresa. Relacionado directamente con Churn Value. | Es la variable respuesta en forma de Yes/No                                                     |
+| Customer Status           | Indica el estado del cliente al final del trimestre: Churned, Stayed o Joined                  | Descartada porque puede dar pistas al modelo                                                      |
+| Churn Category            | Una categoría de alto nivel para el motivo de la baja del cliente: Actitud, Competencia, Insatisfacción, Otro, Precio. | Descartada porque puede dar pistas al modelo                                                      |
+| Churn Reason              | Razón específica por la que un cliente dejó la empresa. Directamente relacionado con Churn Category. | Descartada porque puede dar pistas al modelo                                                      |
+| Churn Score               | Un valor de 0-100 calculado usando la herramienta predictiva IBM SPSS Modeler. El modelo incorpora múltiples factores conocidos que causan la baja. | Descartada porque puede dar pistas al modelo                                                      |
+| Churn Score Category      | Un cálculo que asigna un Churn Score a una de las siguientes categorías: 0-10, 11-20, 21-30, 31-40, 41-50, 51-60, 61-70, 71-80, 81-90, 91-100 | Descartada porque puede dar pistas al modelo                                                      |
+
 - Variables a analizar:
 
 | Column                        | Descripción                                                                                                                       | Tipo        | Transformación                          | Observación                                      |
