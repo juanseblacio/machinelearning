@@ -116,7 +116,7 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ### Importancia de Variables
 - Gráfico de SHAP:
-- 
+  
   ![SHAP Values](https://github.com/juanseblacio/machinelearning/blob/main/SHAP1.png)
 - Principales variables que impactan en la predicción:
   - [Contract_Month to month]: Aumenta/disminuye la probabilidad.
@@ -132,25 +132,37 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ## 🛠️ Implementación en el Negocio
 
-[Describe cómo tu modelo se podría integrar a la operación: alertas tempranas, segmentación de clientes para retención, etc.]
+- Segmentación por riesgo
+  - Identificar grupos declientes con alta probabilidad de abandono.
+  - Aplicar estrategias de retención personalizadas.
+- Contratos a largo plazo
+  - Factor clave: Tipo de contrato --> Promover migración de contratos mensuales aanuales o bianuales, con beneficios adicionales.
+- Fidelización
+  - Ofertas personalizadas por CLTV (Customer Lifetime Value)
+  - Clientes con alto CLTV deben recibir propuestas exclusivas premiando su fidelidad.
+- Alertas tempranas
+  - Implementar sistemas automáticos que detecten señales de posible abandono que disparen acciones inmediatas, sobretodo en los primeros meses del servicio.
 
 ---
 
 ## ⚠️ Limitaciones
 
-- [Ej: No se consideraron variables de comportamiento en tiempo real.]
-- [Ej: No se probó con modelos de Deep Learning.]
+- Tiempo para realizar pruebas con más modelos.
+- Mayor poder computacional demandada por otros modelos.
+- Mejorar el histórico de datos.
 
 ---
 
 ## 📝 Conclusiones y Recomendaciones
 
 ### Conclusiones
-[¿Lograste tu objetivo? ¿Qué valor aporta el modelo?]
+- Se estableció un modelo XGBClassifier para predecir el comportamiento del usuario.
+- El tipo de contrato, el número de referidos y dependientes, el tiempo de uso en meses y elcargo mensual son variables clave en la decisión de churn.
+- Se ha trabajado en contar con un buen Recall para detectar la mayor cantidad de personasque abandona el servicio, sin embargo se recomienda mejorar el modelo para contar unAccuracy más robusto.
+- La interpretabilidad es fundamental para convertir los resultados técnicos en decisionesestratégicas por lo que sería recomendable considerar otras variables como el nivel deingreso y la competencia directa en la zona geográfica del cliente.
 
 ### Recomendaciones
-- Para analistas: [Qué pruebas adicionales podrían hacer].
-- Para el negocio: [Qué datos deberían recolectar para mejorar el modelo.]
+- Tener una variable con las quejas o reclamos de los clientes que podría dar otra variable para anticipar el abandono de un cliente.
 
 ---
 
