@@ -17,9 +17,14 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 ## 🔎 Metodología
 
 ### Análisis Exploratorio
-- Número de filas y columnas: [xxxx filas, xxx columnas].
-- Variables relevantes: [Listar algunas].
-- Insights encontrados: [Ej: Clientes con alta antigüedad tienen menor probabilidad de churn.]
+- Número de filas y columnas: La data cuenta con 7043 observaciones y un total de 50 columnas.
+- Variables a eliminar:
+| Column                   | Description                                                                 | Tipo      | Transformación                                | Observación                                      |
+|--------------------------|-----------------------------------------------------------------------------|-----------|-----------------------------------------------|--------------------------------------------------|
+| Gender                   | The customer’s gender: Male, Female                                           | Categórica| 1 Female 0 Male                               |                                                  |
+| Age                      | The customer’s current age, in years, at the time the fiscal quarter ended. | Numérica  | StandardScaler                                | Distribución sin Outliers                        |
+| Married                  | Indicates if the customer is married: Yes, No                                | Categórica| 1 Yes 0 No                                    |                                                  |
+| Number of Dependents     | Indicates the number of dependents that live with the customer.              | Numérica  | Agrupar en 0, 1, 2, 3 y 4 o más              | De 4 en adelante la distribución cambia drásticamente |
 
 ### Procesamiento de Datos
 - Imputación de valores nulos: [Sí/No, método utilizado].
