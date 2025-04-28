@@ -102,24 +102,32 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 | Métrica | Valor |
 |:--------|------:|
-| Accuracy | [0.XX] |
-| Precision | [0.0.5824] |
+| Accuracy | [0.582418] |
+| Precision | [0.5824] |
 | Recall | [0.9013] |
-| Specificity | [0.XX] |
-| Negative Predictive Value | [0.XX] |
+| Specificity | [0.75] |
+| Negative Predictive Value | [0.95] |
 | F1 Score | [0.7076] |
 
 - Matriz de Confusión:
-  ![Matriz de Confusión](ruta/a/tu/imagen.png)
+
+![Matriz de Confusión](https://github.com/juanseblacio/machinelearning/blob/main/matriz%20confusion.png)
 
 
 ### Importancia de Variables
 - Gráfico de SHAP:
+- 
   ![SHAP Values](https://github.com/juanseblacio/machinelearning/blob/main/SHAP1.png)
 - Principales variables que impactan en la predicción:
-  - [Variable 1]: Aumenta/disminuye la probabilidad.
-  - [Variable 2]: Aumenta/disminuye la probabilidad.
-
+  - [Contract_Month to month]: Aumenta/disminuye la probabilidad.
+  - [Number of referrals]: Aumenta/disminuye la probabilidad.
+  - [Monthly Charge]: Aumenta/disminuye la probabilidad.
+  - [Tenure in Months]: Aumenta/disminuye la probabilidad.
+- Gráfico de SHAP: Comportamiento de la variable respuesta con respecto a variable x
+![SHAP Values](https://github.com/juanseblacio/machinelearning/blob/main/SHAP%20ALTO%20Y%20BAJO.png)
+  - [Contract_Month to month]: Si el contrato es mensual Aumenta la probabilidad.
+  - [Number of referrals]: Mayor sea el valor disminuye la probabilidad.
+  - [Monthly Charge]: Mientras mayor sea el numero la probabilidad aumenta
 ---
 
 ## 🛠️ Implementación en el Negocio
@@ -156,9 +164,8 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ## 📂 Archivos del Repositorio
 
-- `proyecto.ipynb`: Notebook con el desarrollo completo.
-- `slides/`: Capturas de las diapositivas usadas (opcional).
-- `requirements.txt`: (opcional) Librerías necesarias para correr el proyecto.
+- `Notebook/`: ![Notebook con el desarrollo completo](https://github.com/juanseblacio/machinelearning/blob/main/XGBOOST_PROYECTO%20GRUPO%231.ipynb)
+- `slides/`: ![Capturas de las diapositivas usada](https://github.com/juanseblacio/machinelearning/blob/main/LABORATORIO%20X%20(1).pdf):
 
 ---
 
