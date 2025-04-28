@@ -169,8 +169,7 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 ## 🔮 Future Work
 
 - [Probar otros algoritmos como LightGBM].
-- [Agregar nuevas variables: uso de servicios premium, satisfacción del cliente.]
-- [Automatizar el pipeline de scoring.]
+- [Agregar nuevas variables: uso de servicios premium, satisfacción del cliente, Ingresos y Número de reclamos]
 
 ---
 
@@ -191,10 +190,3 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 - Seaborn
 - SHAP
 
----
-
-## 🚀 Cómo ejecutar el proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
