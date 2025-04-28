@@ -19,7 +19,8 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 ### Análisis Exploratorio
 - Número de filas y columnas: La data cuenta con 7043 observaciones y un total de 50 columnas.
 - Variables a eliminar:
-  | Column                    | Descripción                                                                                   | Motivo de eliminación                                                                            |
+
+| Column                    | Descripción                                                                                   | Motivo de eliminación                                                                            |
 |---------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | CustomerID                | Un ID único que identifica a cada cliente.                                                     | Variable ID alfanumérica que no aporta al análisis                                               |
 | Senior Citizen            | Indica si el cliente tiene 65 años o más: Sí, No                                               | Variable Age ya contiene esta información                                                        |
