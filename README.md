@@ -82,7 +82,7 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ### Procesamiento de Datos
 - Imputación de valores nulos: En variables como tipo de servicio, si el servicio no era recibido, estaba nulo, se procede a cambiar el valor nulo por 'No Internet' por ejemplo.
-- Encoding de variables categóricas: Se exlica en la tabla anterior el tratamiento relizado. Todo el coding se realiza mediante la función ColumnTransformer de sklearn
+- Encoding de variables categóricas: Se exPlica en la tabla anterior el tratamiento relizado. Todo el coding se realiza mediante la función ColumnTransformer de sklearn
 - Feature Engineering: Se realizó en Number of Depedents a partir de 4 hasta 11 se mantuvo como 4 ya que la frecuencia a partir de aquí era muy baja
 
 ### Entrenamiento y Tuneo de Hiperparámetros
@@ -103,11 +103,11 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 | Métrica | Valor |
 |:--------|------:|
 | Accuracy | [0.XX] |
-| Precision | [0.XX] |
-| Recall | [0.XX] |
+| Precision | [0.0.5824] |
+| Recall | [0.9013] |
 | Specificity | [0.XX] |
 | Negative Predictive Value | [0.XX] |
-| F1 Score | [0.XX] |
+| F1 Score | [0.7076] |
 
 - Matriz de Confusión:
   ![Matriz de Confusión](ruta/a/tu/imagen.png)
