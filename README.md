@@ -3,10 +3,14 @@
 ## 🎯 Introducción
 
 ### El Problema
-[Describe el problema que abordaste. Ej: La retención de clientes en telecomunicaciones es crucial para evitar pérdidas millonarias debido al churn.]
+En un entorno altamente competitivo como el de las telecomunicaciones, retener a los clientes se ha convertido en una prioridad estratégica para las empresas.
+
+Los efectos del fenómeno de abandono de clientes (CHURN en inglés) implican:
+- Pérdida significativa de ingesos
+- Inversiones constantes para captación de nuevos clientes
 
 ### La Solución
-[Describí brevemente la solución implementada. Ej: Se desarrolló un modelo de clasificación para predecir la probabilidad de que un cliente abandone el servicio.]
+Usando técnicas de Machine Learning, se identifica patrones y comportamiento que predicen si un cliente puede abandonar o no el servicio. Esto permitirá implementar estrategias más efectivas y focalizadas para retener clientes.
 
 ---
 
