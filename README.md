@@ -81,18 +81,18 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 
 ### Procesamiento de Datos
-- Imputación de valores nulos: [Sí/No, método utilizado].
-- Encoding de variables categóricas: [Label Encoding, One-Hot Encoding, etc.]
-- Feature Engineering: [Descripción breve de las nuevas variables creadas].
+- Imputación de valores nulos: En variables como tipo de servicio, si el servicio no era recibido, estaba nulo, se procede a cambiar el valor nulo por 'No Internet' por ejemplo.
+- Encoding de variables categóricas: Se exlica en la tabla anterior el tratamiento relizado. Todo el coding se realiza mediante la función ColumnTransformer de sklearn
+- Feature Engineering: Se realizó en Number of Depedents a partir de 4 hasta 11 se mantuvo como 4 ya que la frecuencia a partir de aquí era muy baja
 
 ### Entrenamiento y Tuneo de Hiperparámetros
-- Modelos probados: [Ej: Random Forest, XGBoost].
-- Hiperparámetros optimizados: [Sí/No, método usado: GridSearchCV, RandomizedSearchCV].
-- Métrica priorizada: [Ej: Recall, para minimizar falsos negativos].
+- Modelos probados: Random Forest y XGBoost
+- Optimización de Hiperparámetros: Mediante RandomizedSearchCV y GridSearchCV respectivamente.
+- Métrica priorizada: Se priorizó Recall con la intención de detectar la mayoría de casos churn
 
 ### Interpretabilidad
-- Método de interpretación: [SHAP, Permutation Importance, etc.]
-- Principales hallazgos: [Ej: La variable "número de llamadas al servicio técnico" es altamente predictiva.]
+- Método de interpretación: SHAP
+- Principales hallazgos: El tipo de contrato, el número de referidos y dependientes, el tiempo de uso en meses y elcargo mensual son variables clave en la decisión de churn.
 
 ---
 
@@ -112,8 +112,6 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 - Matriz de Confusión:
   ![Matriz de Confusión](ruta/a/tu/imagen.png)
 
-- Matriz en dólares:
-  ![Matriz de Confusión Monetaria](ruta/a/tu/imagen.png)
 
 ### Importancia de Variables
 - Gráfico de SHAP:
