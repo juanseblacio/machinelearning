@@ -115,7 +115,7 @@ Usando técnicas de Machine Learning, se identifica patrones y comportamiento qu
 
 ### Importancia de Variables
 - Gráfico de SHAP:
-  ![SHAP Values](ruta/a/tu/imagen.png)
+  ![SHAP Values](https://github.com/juanseblacio/machinelearning/blob/main/SHAP1.png)
 - Principales variables que impactan en la predicción:
   - [Variable 1]: Aumenta/disminuye la probabilidad.
   - [Variable 2]: Aumenta/disminuye la probabilidad.
